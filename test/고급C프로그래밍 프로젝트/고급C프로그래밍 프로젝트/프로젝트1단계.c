@@ -14,4 +14,5 @@ int main(void) {
 	duration = (double)(finish - start) / CLOCKS_PER_SEC;
 	printf("실행 시간: %lf 초\n", duration);
 	return;
+	//vrs
 }
