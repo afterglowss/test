@@ -1,18 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>// rand ÇÔ¼ö »ç¿ëÀ» À§ÇØ
+#include <stdlib.h>// rand ï¿½Ô¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 #pragma warning (disable:4996)
-#include <time.h> // time ÇÔ¼ö »ç¿ëÀ» À§ÇØ
+#include <time.h> // time ï¿½Ô¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 int main(void) {
 	clock_t start, finish;
 	double duration;
-	start = clock(); // ½ÃÀÛ ½Ã°¢
+	start = clock(); // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½
 	for (int i = 0; i < 100; i++) {
 		;
 	}
-	// ¼öÇà½Ã°£À» ÃøÁ¤ÇÏ°í ÇÏ´Â ÄÚµå
-	finish = clock(); // Á¾·á ½Ã°¢
+	// ï¿½ï¿½ï¿½ï¿½Ã°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½Ï´ï¿½ ï¿½Úµï¿½
+	finish = clock(); // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½
 	duration = (double)(finish - start) / CLOCKS_PER_SEC;
-	printf("½ÇÇà ½Ã°£: %lf ÃÊ\n", duration);
+	printf("ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½: %lf ï¿½ï¿½\n", duration);
 	return;
-	//vrs
 }
